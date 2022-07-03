@@ -39,7 +39,7 @@ public class PriceRestAdapter {
             @PathVariable(name = "brandId") Long brandId,
             @ApiParam(required = true, name = "productId", value = "Identificador código de producto", example = "35455")
             @PathVariable(name = "productId") Long productId,
-            @ApiParam(required = true, name = "date", value = "Fecha de aplicación", example = "2020-06-14T10:10:10")
+            @ApiParam(required = true, name = "date", value = "Fecha de aplicación", example = "2020-06-14T10:00:00")
             @RequestParam (value = "date") @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) LocalDateTime date
     ) {
         log.info("Requesting price for product {} on {} with brand {}", productId, date, brandId);
