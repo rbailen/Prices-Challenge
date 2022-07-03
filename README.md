@@ -42,3 +42,4 @@ mvn clean test
 - Dockerize the application
 - Tracing with Spring Cloud Sleuth and Zipkin
 - Security with OAuth 2.1
+- Evolutionary database design with Liquibase or Flyway

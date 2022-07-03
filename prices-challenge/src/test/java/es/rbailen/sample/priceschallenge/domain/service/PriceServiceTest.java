@@ -35,7 +35,7 @@ public class PriceServiceTest {
 
     @Test
     public void getPriceForDay14And10Hours() {
-        LocalDateTime date = LocalDateTime.of(LocalDate.of(2020, 6, 14), LocalTime.of(10, 0, 0));
+        LocalDateTime date = PriceUtilsTest.getLocalDateTime(2020, 6, 14, 10, 0, 0);
 
         Price expected = PriceUtilsTest.example1();
         List<Price> expectedPrices = Arrays.asList(expected);
@@ -46,7 +46,7 @@ public class PriceServiceTest {
 
     @Test
     public void getPriceForDay14And16Hours() {
-        LocalDateTime date = LocalDateTime.of(LocalDate.of(2020, 6, 14), LocalTime.of(16, 0, 0));
+        LocalDateTime date = PriceUtilsTest.getLocalDateTime(2020, 6, 14, 16, 0, 0);
 
         Price expected = PriceUtilsTest.example2();
         List<Price> expectedPrices = Arrays.asList(PriceUtilsTest.example1(), expected);
@@ -57,7 +57,7 @@ public class PriceServiceTest {
 
     @Test
     public void getPriceForDay14And21Hours() {
-        LocalDateTime date = LocalDateTime.of(LocalDate.of(2020, 6, 14), LocalTime.of(21, 0, 0));
+        LocalDateTime date = PriceUtilsTest.getLocalDateTime(2020, 6, 14, 21, 0, 0);
 
         Price expected = PriceUtilsTest.example1();
         List<Price> expectedPrices = Arrays.asList(expected);
@@ -68,7 +68,7 @@ public class PriceServiceTest {
 
     @Test
     public void getPriceForDay15And10Hours() {
-        LocalDateTime date = LocalDateTime.of(LocalDate.of(2020, 6, 15), LocalTime.of(10, 0, 0));
+        LocalDateTime date = PriceUtilsTest.getLocalDateTime(2020, 6, 15, 10, 0, 0);
 
         Price expected = PriceUtilsTest.example3();
         List<Price> expectedPrices = Arrays.asList(PriceUtilsTest.example1(), expected);
@@ -79,7 +79,7 @@ public class PriceServiceTest {
 
     @Test
     public void getPriceForDay16And21Hours() {
-        LocalDateTime date = LocalDateTime.of(LocalDate.of(2020, 6, 15), LocalTime.of(10, 0, 0));
+        LocalDateTime date = PriceUtilsTest.getLocalDateTime(2020, 6, 15, 10, 0, 0);
 
         Price expected = PriceUtilsTest.example4();
         List<Price> expectedPrices = Arrays.asList(PriceUtilsTest.example1(), expected);
